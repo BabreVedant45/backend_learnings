@@ -7,6 +7,7 @@ app.use(express.json());
 await mongoose.connect("mongodb://127.0.0.1:27017/simpleauth");
 console.log("Connected to MongoDB");
 
+
 const User = mongoose.model(
   "User",
   new mongoose.Schema({
